@@ -1,0 +1,24 @@
+{
+  "name": "siri",
+  "version": "1.0.0",
+  "description": "npm init -y",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIRI123806/siri.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SIRI123806/siri/issues"
+  },
+  "homepage": "https://github.com/SIRI123806/siri#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
