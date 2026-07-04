@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .left-bar{
+            position:fixed;
+            top: 20px;
+            left:20px;
+        }
+        .right-bar{
+            position:fixed;
+            top: 20px;
+            right:20px;
+        }
+        .logo{
+            color:blue;
+        }
+        .frame{
+            color:green;
+        } 
+        .app{
+            width: 300px;
+            height: 30px;
+            border-radius: 30px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .advice{
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <div>
+    <span class="left-bar">&#9881</span>
+    <span class="right-bar">&#x2022;online |&#x1F552;-ms </span>
+    </div>
+    <center>
+        <br>
+            <h1><span class="logo">Hello</span>SIRI!</h1>
+    <p class="frame">One  million phases,Four Algorithms,,Prefix Based Auto Suggest</p>
+    <span>&#128269;</span>
+        <span><input class="app" placeholder="start typing..." </span>
+        <br><span><input class="advice" placeholder="      advice..." </span></br>
+    </br>
+    <div>
+        <script>
+            var searchbox = document.getElementById("searchbox");
+            searchbox.addEventListener("input", function() {
+                var inputValue = searchbox.value;
+                // Perform auto-suggest logic here based on the inputValue
+                console.log("User input:", inputValue);
+                if(userInput.trim()==" "){
+
+                }else{
+                    var url1 = "https://autosuggest-backend.onrender.com/api/auto-suggest?query=" + inputValue;
+                    var url2 = "hel&aalgorithm=brute&limit=10&weight=false";
+                    var url = url1 + inputValue + url2;
+                    fetch(url)
+                        .then(function(response) {
+                            return response.json();
+                        })
+                        .then(function(data) {
+                            console.log("Auto-suggest results:", data);
+                            // Process and display the auto-suggest results as needed
+                        })
+                }
+            });
+        </script>
+    </div>
+    </center>
 </body>
 </html>
